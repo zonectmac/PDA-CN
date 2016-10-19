@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1000"
+    android:fromXDelta="0"
+    android:interpolator="@android:anim/cycle_interpolator"
+    android:repeatCount="infinite"
+    android:repeatMode="reverse"
+    android:toXDelta="5" >
+
+</translate> <!-- 设置动画播放完停留在当前位置见rotate_anticlockwise.xml这里 -->
+
+<!-- android:interpolator="@anim/cycle"将插入器写在cycle里面然后引用 -->

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sfcservice.pda"
+    android:versionCode="34"
+    android:versionName="2.34" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+
+    <application
+        android:icon="@drawable/sfc_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:label="@string/app_name"
+            android:name=".SFCLogin" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".home.SFCDetectionShelves" >
+        </activity>
+        <activity android:name=".home.SFCCutSheetBack" >
+        </activity>
+        <activity android:name=".home.SFCBindingShelves" >
+        </activity>
+        <activity android:name=".home.SFCNewProduct" >
+        </activity>
+        <activity android:name=".home.SFCContainerShelvesBinding" >
+        </activity>
+         <activity android:name=".home.SFCContainerShelvesBindingDown" >
+        </activity>
+        <activity android:name=".home.SFCStockTransferMerge" >
+        </activity>
+        <activity android:name=".home.SFCStockTransfer" 
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".home.SFCStockTransferDetail" >
+        </activity>
+		<activity android:name="com.sfcservice.pda.offline.SFCDisOffline"
+		    android:launchMode="singleTask">
+		</activity>
+		<activity android:name="com.sfcservice.pda.offline.BindContainer"></activity>
+		<activity android:name="com.sfcservice.pda.offline.SFCDisOfflinePick"></activity>
+        <receiver android:name="com.sfcservice.broadcast.MyBroadcast" >
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.sfcservice.service.MyService" >
+            <intent-filter >
+                <action android:name="com.sfcservice.ServiceTag" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".SFCPDAActivity" >
+        </activity>
+        <activity android:name="com.sfcservice.log.SFCNewProLog" >
+        </activity>
+        <activity
+            android:name="com.sfcservice.img.Img"
+            android:theme="@style/imgActivityBackground" >
+        </activity>
+        <activity android:name=".home.SFCBindingTransfer" >
+        </activity>
+        <activity android:name=".home.SFCDistribution" >
+        </activity>
+        <activity android:name=".home.SFCDistributionOrder" >
+        </activity>
+        <activity android:name=".home.SFCDisOnLine" >
+        </activity>
+        <activity android:name=".home.SFCDisOffLine" >
+        </activity>
+        <activity android:name=".home.SFCDisConfig" >
+        </activity>
+        <activity android:name=".home.SFCDistributionBox" >
+        </activity>
+        <activity android:name=".home.SFCCheckAll" >
+        </activity>
+        <activity android:name=".home.SFCCheckAllSKU" >
+        </activity>
+        <activity android:name=".home.SFCDisDis" >
+        </activity>
+        <activity android:name=".home.SFCDetectionSKU" >
+        </activity>
+        <activity
+            android:name="com.sfcservice.lock.LockActivity"
+            android:theme="@style/SFCDialogStyle" >
+        </activity>
+        <activity android:name="com.sfcservice.img.ImgLoad"
+            android:theme="@style/imgActivityBackground"
+            ></activity>
+        <activity android:name=".home.SFCDisOnlineManyMoreSKU" >
+        </activity>
+        <activity android:name=".home.SFCDisOnlineManyOneSKU" >
+        </activity>
+        <activity android:name=".home.SFCDisManyMoreOrder" >
+        </activity>
+        <activity android:name=".home.SFCDisManyOneOrder"></activity>
+        <activity android:name=".home.SFCBoxSpecial"></activity>
+        <activity android:name=".home.SFCDisArea"></activity>
+    </application>
+
+</manifest>

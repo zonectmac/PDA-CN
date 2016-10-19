@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="imgActivityBackground">
+        <item name="android:windowBackground">@color/halfTransparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="disOrderActivityBackground">
+        <item name="android:windowBackground">@color/littleTransparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="SFCDialogStyle">
+        <item name="android:windowBackground">@color/bigTransparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+	<style name="SFCButton">
+		<item name="android:background">@drawable/btn_common_radius</item>
+		<item name="android:padding">10dp</item>
+		<item name="android:textColor">#0486c1</item>
+	</style>
+</resources>

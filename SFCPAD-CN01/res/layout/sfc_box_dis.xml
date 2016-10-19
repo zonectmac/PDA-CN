@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/title" />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_back"
+                android:focusable="false"
+                android:text="返回"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="特殊分箱"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/et_background"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="客户产品号 : "
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/etCustomerID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/et_background_no_color"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:hint="请输入客户产品号"
+                            android:textSize="15sp"
+                            android:imeOptions="actionDone"
+                            android:textColor="#555555" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#dadada" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="容器编号 : "
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/etContainerCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/et_background_no_color"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:hint="请输入容器编号"
+                            android:textSize="15sp"
+                            android:imeOptions="actionDone"
+                            android:textColor="#555555" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#dadada" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="3dp"
+                            android:paddingLeft="5dp"
+                            android:text="数量 : "
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/etCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/et_background_no_color"
+                            android:padding="5dp"
+                            android:imeOptions="actionDone"
+                            android:hint="请输入数量"
+                            android:textSize="15sp"
+                            android:singleLine="true"
+                            android:textColor="#555555" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#dadada" />
+                      <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+                        <TextView  
+                        	android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="3dp"
+                            android:paddingLeft="5dp"
+                            android:text="产品类型 :"
+                            android:textColor="#000000"
+                            android:textSize="15sp"/>  
+                         <RadioGroup android:id="@+id/rg"
+					        android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"                            
+                            android:orientation="horizontal">
+					       
+					        <RadioButton android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:id="@+id/opt1"
+					            android:button="@null"
+					            android:padding="3dp"
+                            	android:paddingLeft="5dp"
+    							android:layout_gravity="center_vertical"  
+							    android:drawableLeft="@android:drawable/btn_radio"  
+							    android:gravity="center"  
+							    android:textColor="#000000"  
+							    android:textSize="12dp"					            
+					            android:text="合格品(S1)"/>
+					        
+					        <RadioButton android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:id="@+id/opt2"
+								android:button="@null"
+								android:padding="3dp"
+                            	android:paddingLeft="5dp"
+    							android:layout_gravity="center_vertical"  
+							    android:drawableLeft="@android:drawable/btn_radio"  
+							    android:gravity="center"  
+							    android:textColor="#000000"  
+							    android:textSize="12dp"		
+					            android:text="不良品(S2)"/>
+					         
+					   	  </RadioGroup>
+                        
+                         </LinearLayout>
+                         <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#dadada" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:text="图片信息 : "
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/imgInfo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp" >
+                        </ImageView>
+                       
+                    </LinearLayout>                      
+                    
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_common_radius"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="10dp"
+                    android:text="确认"
+                    android:textColor="#0486c1" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+	<include layout="@layout/sfc_pro"/>
+
+	<LinearLayout
+		android:id="@+id/linearLayout1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" >
+	</LinearLayout>
+
+</FrameLayout>

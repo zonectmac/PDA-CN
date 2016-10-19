@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="halfTransparent">#9000</color>
+<color name="littleTransparent">#b000</color>
+<color name="bigTransparent">#0000</color>
+    
+</resources>

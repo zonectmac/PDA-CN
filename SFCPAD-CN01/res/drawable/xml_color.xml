@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:pivotX="50" 表示绝对定位  
+         android:pivotX="50%" 表示相对控件本身的定位  
+         android:pivotX="50%p" 表示相对父控件的定位  
+     -->  
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+	android:pivotX="50%" android:pivotY="50%" android:fromDegrees="0"
+	android:toDegrees="360">
+	
+	<shape android:shape="ring" android:innerRadiusRatio="3"
+		android:thicknessRatio="8" android:useLevel="false">
+		<gradient android:type="sweep" android:useLevel="false"
+			android:startColor="#FFFFFF" android:centerColor="#66ffff"
+			android:centerY="0.50" android:endColor="#01bfff" />
+	</shape>
+</rotate>
+
+<!-- <shape>
+              必须。必须是根元素。
+    Attributes：
+              android:shape
+                  Keyword。定义Shape的类型。有效的值包括：
+Value
+Desciption
+"rectangle"
+矩形。默认形状。
+"oval"
+椭圆。
+"line"
+水平直线。需要<stroke>元素定义线的宽度。
+"ring"
+环形。
+ 
+接下来的特性只能在android:shape=”ring”时使用：
+              android:innerRadius
+                  Dimension。内环的半径。
+              android:innerRadiusRatio
+         Float。以环的宽度比率来表示内环的半径。例如，如果android:innerRadiusRatio=”5”，内环半径等于环的宽度除以5。这个值可以被android:innerRadius覆盖。默认值是9。
+              android:thickness
+                  Dimension。环的厚度。
+              android:thicknessRatio
+          Float。以环的宽度比率来表示环的厚度。例如，如果android:thicknessRatio=”2”，厚度就等于环的宽度除以2。这个值可以被android:thickness覆盖。默认值是3。
+              android:useLevel
+                  Boolean。“true”表示可以当作LevelListDrawable使用。一般都为“false”。
+   
+<gradient>
+              为Shape指定渐变色。
+Attributes：
+              android:angle
+Integer。渐变色的角度值。0表示从左到右，90表示从下到上。必须是45的倍数，默认是0。
+              android:centerX
+                  Float。渐变色中心的X相对位置（0-1.0）。当android:type=”linear”时无效。
+              android:centerY
+                  Float。渐变色中心的Y相对自身的位置（0-1.0）。当android:type=”linear”时无效。
+              android:centerColor
+                  Color。可选的颜色，出现在start和end颜色之间。
+              android:endColor
+                  Color。end颜色。
+              android:gradientRadius
+                  Float。渐变色的半径。当android:type=”radial”时有效。
+              android:startColor
+                  Color。start颜色。
+android:type
+                  Keyword。渐变色的样式。有效值为：
+Value
+Description
+"linear"
+线性渐变，默认值。
+"radial"
+环形渐变。start颜色是处于中间的颜色。
+"sweep"
+sweep渐变
+              android:useLevel
+                  Boolean。“true”表示可以当作LevelListDrawable使用。
+   
+<solid>
+              填充shape的单一色。
+Attributes：
+    android:color
+                  Color。这个颜色会应用到shape上。
+   
+<stroke>
+              shape的线形。
+    Attributes：
+              android:width
+                  Dimension。线的厚度。
+              android:color
+                  Color。线的颜色。
+              android:dashGap
+                  Dimension。间断线间的距离。仅在android:dashWidth设定时有效。
+              android:dashWidth
+                  Dimension。间断线的大小。仅在android:dashGap设定时有效。
+ 
+    <padding>
+              内部View元素的边距。
+    Attributes：
+              android:left
+                  Dimension。左内边距。
+              android:top
+                  Dimension。上内边距。
+              android:right
+                  Dimension。右内边距。
+              android:bottom
+                  Dimension。下内边距。
+ 
+    <corners>
+              为shape创建圆角。当shape是一个矩形时有效。
+    Attributes：
+              android:radius
+                  Dimension。圆角的半径。会被下面的特性覆盖。
+              android:topLeftRadius
+                  Dimension。左上圆角半径。
+              android:topRightRadius
+                  Dimension。右上圆角半径。
+              android:bottomLeftRadius
+                  Dimension。左下圆角半径。
+              android:bottomRightRadius
+                  Dimension。右下圆角半径。 -->
+
+<!-- <layer-list xmlns:android="http://schemas.android.com/apk/res/android"> 
+	<item> <rotate android:drawable="@drawable/dialog_progress_round" android:fromDegrees="0.0" 
+	android:toDegrees="360.0" android:pivotX="50.0%" android:pivotY="50.0%" /> 
+	</item> </layer-list> -->
